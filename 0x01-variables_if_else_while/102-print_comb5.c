@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main-progrtam entry point
-*Return:0 success, non zero fail
+*Return:0 if successful and non zero if fail
 */
 int main(void)
 {
