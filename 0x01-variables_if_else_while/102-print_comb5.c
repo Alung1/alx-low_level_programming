@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
-*main-progrtam entry point
+*main-program entry point
 *Return:0 if successful and non zero if fail
 */
 int main(void)
 {
 	int i, j;
 
-	for (i = 0; i < 99; i++)
+	for (i = 0; i < 98; i++)
 {
 	for (j = i + 1; j <= 99; j++)
 {
