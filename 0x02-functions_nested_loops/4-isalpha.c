@@ -3,7 +3,8 @@
 /**
  * _isalpha - checks for alphabetical letters
  * @c: a character to check on
- * Retun: returns 0 or 1 depending on the condition
+ * Retun: Returns 1 if c is a letter, lowercase or uppercase
+ * Return: Returns 0 otherwise
  */
 int _isalpha(int c)
 {
