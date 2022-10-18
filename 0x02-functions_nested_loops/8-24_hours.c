@@ -33,7 +33,7 @@ void jack_bauer(void)
 	if (j < 10)
 	{
 	_putchar(':');
-	_putchar('0')
+	_putchar('0');
 	_putchar(j);
 	}
 	{
@@ -46,5 +46,4 @@ void jack_bauer(void)
 	}
 	
 	}
-
 }
