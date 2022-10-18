@@ -1,12 +1,19 @@
-#include <stdio.h>
-/*
- *main-prpgram entry point
+#include <main.h>
+/**
+ *main-program prints putchar
  *
  *Return: 0 if successful
  */
 
 int main(void)
 {
-	putchar(char"_putchar");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	return (0);
 }
