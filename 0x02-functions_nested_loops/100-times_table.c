@@ -9,20 +9,20 @@
 void print_times_table(int n)
 
 {
-	int n, m, p;
+	int num, m, p;
 
-	if (n >= 0 && n <= 15)
+	if (num >= 0 && num <= 15)
 {
-	for (n = 0; n <= n; n++)
+	for (num = 0; num <= num; n++)
 
 	{
 	_putchar('0');
-	for (m = 1; mut <= n; m++)
+	for (m = 1; m <= n; m++)
 	{
 	_putchar(',');
 	_putchar(' ');
 
-	p = n * m;
+	p = num * m;
 
 	if (p <= 99)
 		_putchar(' ');
