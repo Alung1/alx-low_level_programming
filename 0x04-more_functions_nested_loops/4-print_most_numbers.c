@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 * print_most_numbers - prints and not printing 2 and 4
 *
@@ -8,15 +8,13 @@
 
 void print_most_numbers(void)
 {
-	char c;
+	int ch;
 
-	for (c = '0'; c <= '9'; c++)
+	for (ch = 48; ch < 58; ch++)
 	{
-	if ((c == '2' || c == '4'))
-	continue;
+	if ((ch != 50 && ch != 52))
 
-	else
-	_putchar(c);
+	_putchar(ch);
 	}
 	_putchar('\n');
 }
