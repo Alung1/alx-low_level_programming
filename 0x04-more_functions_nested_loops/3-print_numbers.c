@@ -2,11 +2,11 @@
 
 /**
 *print_numbers - a fucntion that prints numbers from 0 to 9
-*
+*@m: interger
 *Return: 0-9 and followed by a newline
 */
 
-void print_numbers(void)
+void print_numbers(int m)
 
 {
 	int m;
