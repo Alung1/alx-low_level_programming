@@ -25,7 +25,7 @@ int main(void)
 		else
 			printf("%d", m);
 		if (m < 100)
-                        printf(" ");
+		_printf(" ");
 
 	}
 	printf("\n");
