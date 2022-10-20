@@ -7,7 +7,7 @@
 *Return: 0-9 and followed by a newline
 */
 
-void print_numbers(int m)
+void print_numbers(void)
 
 {
 	int m;
