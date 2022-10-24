@@ -8,7 +8,7 @@
 
 int _strlen(char *s)
 {
-	_str len = 0;
+	size_t len = 0;
 
 	while (*s++)
 		len++;
