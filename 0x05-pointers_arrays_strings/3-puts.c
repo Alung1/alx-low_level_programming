@@ -5,7 +5,7 @@
  *@str: the string
  *
  */
-void _puts(char s)
+void puts(char s)
 {
 
 	while (s)
