@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
-*
-*
-*
-*
+*_strcat -> concat 2 string
+*@dest:character
+*@src:character
+*Return:character
 */
 
 char *_strcat(char *dest, char *src)
@@ -18,7 +18,12 @@ char *_strcat(char *dest, char *src)
 		dest++;
 	}
 	
-	while (*src 
-
-
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (s); 
 }
