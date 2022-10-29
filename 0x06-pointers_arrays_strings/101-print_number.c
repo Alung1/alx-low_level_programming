@@ -4,7 +4,7 @@
 *print_number -> prints any integer
 *@n: number to print
 *
-*Return: nothing
+*Return: SUCCESS
 */
 void print_number(int n)
 {
