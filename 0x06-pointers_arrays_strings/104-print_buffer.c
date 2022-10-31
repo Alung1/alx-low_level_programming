@@ -5,7 +5,7 @@
 *print_buffer -> prints a buffer
 *@b:buffer to print
 *@size: size of the buffer
-*Reurn: void
+*Reurn: 0
 */
 void print_buffer(char *b, int size)
 
@@ -17,15 +17,15 @@ void print_buffer(char *b, int size)
 	printf("%08x: ", i * 10);
 	if (i < size / 10)
 	{
-	print_buffer(b, 9, i);
+	print_line(b, 10, i);
 	}
 	else
 	{
-	print_buffer(b size % 10 - 1, i);
+	print_line(b, size % 10 - 1, i);
 	}
 	putchar('\n');
 	}
 	if (size == 0)
-	putcharr('\n');
+	putchar('\n');
 
 }
