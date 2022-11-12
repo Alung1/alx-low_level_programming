@@ -5,7 +5,6 @@
  * main -> a program that adds positive numbers.
  * @argc: argument count
  * @argv: arguments
- *
  * Return: 0
  */
 int main(int argc, char **argv)
@@ -19,7 +18,7 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	for (m = 1; argv[m]; i++)
+	for (m = 1; argv[m]; m++)
 	{
 		s = strtol(argv[m], &flag, 10);
 		if (*flag)
