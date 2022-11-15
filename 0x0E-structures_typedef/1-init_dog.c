@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "dog.h"
 
 /**
@@ -6,21 +5,15 @@
 * @d: pointer to structure
 * @name: name of dog
 * @age: age of dog
-* @owner: owner of dog
+* @owner: pointing to owner of dog
 * Return: void
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != NULL)
+	if (d)
 	{
-		if (d->name != NULL)
-			printf("Name: %s\n", d->name);
-		else
-			printf("Name: (nil)\n");
-		printf("Age: %.6f\n", d->age);
-		if (d->owner != NULL)
-			printf("Owner: %s\n", d->owner);
-		else
-			printf("Owner: (nil)\n");
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
 	}
 }
