@@ -2,12 +2,14 @@
 #include "dog.h"
 
 /**
- * print_dog - prints a struct dog
- * @d: pointer to structure
- *
- * Return: void
- */
-void print_dog(struct dog *d)
+* init_dog -> prints a struct dog
+* @d: pointer to structure
+* @name: name of dog
+* @age: age of dog
+* @owner: owner of dog
+* Return: void
+*/
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
 	{
