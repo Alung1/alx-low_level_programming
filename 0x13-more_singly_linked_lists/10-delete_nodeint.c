@@ -2,40 +2,35 @@
 #include <stdlib.h>
 
 /**
- * insert_nodeint_at_index -> inserting a new node at agiven postion
+ * delete_nodeint_at_index -> deletes the node at index
  * @head: double pointer
- * @idx: index of the node
- * @n: new node value
- * Return: the address of new node
+ * @index: index of node
+ * Return: pointer to the index node
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int i;
-	listint_t *temp, *new;
+	listint_t *temp, *next;
 
-	if (head == NULL)
-		return (NULL);
-	if (idx != 0)
+	if (head == NULL || *head == NULL)
+		return (-1);
+	if (index == 0)
 	{
-		temp = *head;
-		for (i = 0; i < idx - 1 && temp != NULL; i++)
-		{
-			temp = temp->next;
-		}
-		if (temp == NULL)
-			return (NULL);
+		next = (*head)->next;
+		free(*head);
+		*head = next;
+		return (1);
 	}
-	new = malloc(sizeof(listint_t));
-	if (new == NULL)
-		return (NULL);
-	new->n = n;
-	if (idx == 0)
+	temp = *head;
+	for (i = 0; i < index - 1; i++)
 	{
-		new->next = *head;
-		*head = new;
-		return (new);
+		if (temp->next == NULL)
+			return (-1);
+		temp = temp->next;
 	}
-	new->next = temp->next;
-	temp->next = new;
-	return (new);
+	next = temp->next;
+	temp->next = next->next;
+	free(next);
+	return (1);
+
 }
